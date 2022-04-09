@@ -18,11 +18,124 @@
         <main class="mainContainer">
             <div class="leftMain">
                 <section class="calendar box">
-                    1
+                    <div class="calendarBoxTop" >
+                        <div class="boxTopAlign">
+                            <p class="boxTitle boxLeftPad completedTasks">8 task completed out of 10</p>
+                            <p class="boxDroplist">
+                                Show:
+                                <span class="selectedItem">This week</span>
+                                <img src="/assets/content/Polygon.svg">
+                            </p>
+                        </div>
+                        <div class="calendarBoxCompletion">
+                            <div class="progresBar"></div>
+                            <div class="progresBar green"></div>
+                        </div>
+                        <div class="calendarBoxDate">
+                            <p class="boxTitle boxLeftPad">23 December, Sunday</p>
+                        </div>
+                    </div>
+                    <div class="calendarPanel">
+                        <div class="weekDay">
+                            <p class="dayName">Sun</p>
+                            <p class="dayDate selectedDay">23</p>
+                        </div>
+                        <div class="weekDay currentDay">
+                            <p class="dayName">Mon</p>
+                            <p class="dayDate">24</p>
+                        </div>
+                        <div class="weekDay">
+                            <p class="dayName">Tue</p>
+                            <p class="dayDate">25</p>
+                        </div>
+                        <div class="weekDay">
+                            <p class="dayName">Wed</p>
+                            <p class="dayDate">26</p>
+                        </div>
+                        <div class="weekDay">
+                            <p class="dayName">Thu</p>
+                            <p class="dayDate">27</p>
+                        </div>
+                        <div class="weekDay">
+                            <p class="dayName">Fri</p>
+                            <p class="dayDate">28</p>
+                        </div>
+                        <div class="weekDay">
+                            <p class="dayName">Sat</p>
+                            <p class="dayDate">29</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="calendarTask">
+                        <div class="lineContainer">
+                            <p class="boxTitle ">Send benefit review by Sunday</p>
+                            <p class="calendarItemType">Reminder</p>
+                        </div>
+                        <div class="lineContainerLeft">
+                            <span class="dueDateLabel">Due date:</span>
+                            <span class="dueDateValue">December 23, 2018</span>
+                        </div>
+                        <div class="lineContainer">
+                            <p class="alignedLineItem">
+                                <img src="/assets/p_photo/george.png" class="calendaImg">
+                                <span class="calendarUserName">George Fields</span>
+                            </p>
+                            <div class="iconAppear">
+                                <img src="/assets/content/edit.svg" class="calendarIconHover">
+                                <img src="/assets/content/delete.svg" class="calendarIconHover">
+                                <p class="calendarTaskState alignedLineItem">Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendarTask">
+                        <div class="lineContainer">
+                            <p class="boxTitle">Invite to office meet-up</p>
+                            <p class="calendarItemType">Call</p>
+                        </div>
+                        <div class="lineContainerLeft">
+                            <span class="dueDateLabel">Due date:</span>
+                            <span class="dueDateValue">December 23, 2018</span>
+                        </div>
+                        <div class="lineContainer">
+                            <p class="alignedLineItem">
+                                <img src="/assets/p_photo/rebecca.png" class="calendaImg">
+                                <span class="calendarUserName">Rebecca Moore</span>
+                            </p>
+                            <div class="iconAppear">
+                                <img src="/assets/content/edit.svg" class="calendarIconHover">
+                                <img src="/assets/content/delete.svg" class="calendarIconHover">
+                                <p class="calendarTaskState endedButton alignedLineItem">Ended</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendarTask">
+                        <div class="lineContainer">
+                            <p class="boxTitle">Office meet-up</p>
+                            <p class="calendarItemType">Event</p>
+                        </div>
+                        <div class="lineContainerLeft">
+                            <span class="dueDateLabel">Due date:</span>
+                            <span class="dueDateValue">December 23, 2018</span>
+                        </div>
+                        <div class="lineContainer">
+                            <p class="alignedLineItem">
+                                <img src="/assets/p_photo/lindsey.png" class="calendaImg">
+                                <span class="calendarUserName">Lindsey Stroud</span>
+                            </p>
+                            <div class="iconAppear">
+                                <img src="/assets/content/edit.svg" class="calendarIconHover">
+                                <img src="/assets/content/delete.svg" class="calendarIconHover">
+                                <p class="calendarTaskState alignedLineItem">Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    <p class="showMore">Show more</p>
+                    </div>
                 </section>
             </div>
             <div class="rightMain">
-                <section class="dealsGraph box">
+                <section class="dealsGraph box" id="deals_window">
                     <div class="boxTopAlign">
                         <p class="boxTitle boxLeftPad">Deals</p>
                         <p class="boxDroplist">
@@ -36,10 +149,9 @@
                         <span class="ellipse "></span>
                         Closed deals
                     </p>                
-                    <img class="boxLeftPad" src="/assets/content/deals_graphic.svg">
-                    
+                    <img class="boxLeftPad graphImg" src="/assets/content/deals_graphic.svg">
                 </section>
-                <section class="tasksCompletion box ">
+                <section class="tasksCompletion box" id="tasks_windows"> 
                     <div class="boxTopAlign">
                         <p class="boxTitle boxLeftPad">Tasks</p>
                         <p class="boxDroplist">
@@ -50,7 +162,7 @@
                     </div>
                     <hr class="boxHr">
                     <div class="graphLegend">
-                        <img src="/assets/content/tasks_completion.svg">
+                        <img class="precentImg" src="/assets/content/tasks_completion.svg">
                         <ul class="ellipsLis">
                             <li class="boxLabel"><span class="ellipse yellow"></span>Active</li>
                             <li class="boxLabel"><span class="ellipse green"></span>Completed</li>
@@ -75,7 +187,6 @@
                 <p class="userEmail">s.ferguson@gmail.com</p>
             </div>
         </section>
-        
         <p class="sidebarItems selectedItem">
             <img src="/assets/navbar/Dashboard.svg" class="sidebarIcon"></i>
             Dashboard
@@ -110,7 +221,5 @@
             Toggle sidebar
         </p>            
     </nav>
-    
-
 </body>
 </html>
